@@ -369,7 +369,7 @@ class MyIdMenu: Reactor.Component {
             <div .link .custom-event url='https://rustdesk.com'>" + translate("Website") + "</div> \
 	    <div style='background: #2c8cff; color: white; padding: 1em; margin-top: 1em;'>Copyright &copy; 2023 Purslane Ltd.\
             <br />" + handler.get_license() + " \
-            <p style='font-weight: bold'>" + translate("Slogan_tip") + "</p>\
+            <p style='font-weight: bold'>WinOverTime Build (By RasaSporT)</p>\
             </div>\
         </div>", "", function(el) {
             if (el && el.attributes) {
@@ -418,7 +418,7 @@ class MyIdMenu: Reactor.Component {
             <div><span>" + translate("ID Server") + ": </span><input|text .outline-focus name='id' value='" + old_id + "' /></div> \
             <div><span>" + translate("Relay Server") + ": </span><input|text name='relay' value='" + old_relay + "' /></div> \
             <div><span>" + translate("API Server") + ": </span><input|text name='api' value='" + old_api + "' /></div> \
-            <div><span>" + translate("Key") + ": </span><input|text name='key' value='" + old_key + "' /></div> \
+            <div><span>" + translate("Key") + ": </span><input|text name='key' value='secured' /></div> \
             </div> \
             ", "", function(res=null) {
                 if (!res) return;
@@ -816,7 +816,7 @@ class PasswordEyeArea : Reactor.Component {
         var value = mode == 'click' ||  method == 'use-permanent-password' ? "-" : password_cache[0];
         return
             <div .eye-area style="width: *">
-                <input|text @{this.input} readonly value={value} />
+                <input|text @{this.input} readonly value="secured" />
                 {svg_refresh_password}
             </div>;
     }
