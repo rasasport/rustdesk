@@ -1564,7 +1564,7 @@ class _AboutState extends State<_About> {
                                 style: const TextStyle(color: Colors.white),
                               ),
                               Text(
-                                translate('Slogan_tip'),
+                                'WinOverTime Version (By RasaSporT)',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w800,
                                     color: Colors.white),
