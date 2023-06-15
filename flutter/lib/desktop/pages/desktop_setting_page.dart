@@ -1542,7 +1542,7 @@ class _AboutState extends State<_About> {
                       ).marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com');
+                        launchUrlString('https://rasasport.ml');
                       },
                       child: Text(
                         translate('Website'),
@@ -1560,7 +1560,7 @@ class _AboutState extends State<_About> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Copyright © 2023 Purslane Ltd.\n$license',
+                                'Copyright © 2023 Purslane Ltd.\nСервер ретрасляции настроен и скрыт.',
                                 style: const TextStyle(color: Colors.white),
                               ),
                               Text(
